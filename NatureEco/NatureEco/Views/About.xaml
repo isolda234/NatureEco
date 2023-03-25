@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+                NavigationPage.HasNavigationBar="False"
+             x:Class="NatureEco.Views.About">
+
+
+    <Grid BackgroundColor="#daeee1">
+      
+        <Frame WidthRequest="550" HeightRequest="550" HorizontalOptions="FillAndExpand" Padding="0" CornerRadius="275" TranslationX="180" TranslationY="-240" >
+            <Image Source="urso2.jpg"  Aspect="AspectFill" Margin="0,0,0,-20"  ></Image>
+        </Frame>
+        <StackLayout WidthRequest="120" HeightRequest="70" VerticalOptions="End"  BackgroundColor="Black">
+            <Grid>
+                <Label Text="© 2022 - NatureEco" TextColor="White" Margin="10,20,0,0"/>
+                <Image Source="iconsfacebook.png" HeightRequest="30"   TranslationX="58" Margin="10,20,0,0"/>
+                <Image Source="iconsinstagram.png" HeightRequest="30"   TranslationX="58"  Margin="80,20,0,0"/>
+                <Image Source="iconsyoutube.png" HeightRequest="30"  TranslationX="68"  Margin="120,20,0,0"/>
+            </Grid>
+
+        </StackLayout>
+
+        <StackLayout>
+
+            <StackLayout TranslationY="15">
+                <Label Text="Nature"  VerticalTextAlignment="Center" TextColor="#15C561" FontSize="24" FontAttributes="Bold" Margin="20, 40,0,0" />
+                <Label Text="Eco" TextColor="#FBF9F9" FontSize="24" FontAttributes="Bold" Margin="93,-38,0,0" xct:ShadowEffect.Color="Gray" xct:ShadowEffect.OffsetY="5" xct:ShadowEffect.Opacity="1.5"/>
+            </StackLayout>
+
+
+            <StackLayout Margin="188,-30,0,0" Orientation="Horizontal">
+                    <Button x:Name="home"  BackgroundColor="Transparent" TextColor="White"    Text="Home"  Margin="-20,0,0,0" Clicked="OnHome"/>
+                    <Button x:Name="about" BackgroundColor="Transparent"  IsEnabled="False" Text="About" TextColor="#15C561" Margin="-20,0,0,0" Clicked="OnAbout"/>
+                    <Button x:Name="contact" BackgroundColor="Transparent" Text="Contact" TextColor="White" Margin="-20,0,0,0"  Clicked="OnContact"/>
+
+            </StackLayout>
+
+            <StackLayout TranslationY="-20">
+                <Image Source="planti2.png" WidthRequest="50" Margin="-220,70,0,-95"></Image>
+                <Label Text="ABOUT US" TextColor="#139F4F" FontSize="16" FontAttributes="Bold" Margin="40,90,0,20"/>
+                <Label Text=" NatureEco é uma aplicativo criado com objetivo de promover  a Sustentabilidade Ambiental "
+                       LineBreakMode="WordWrap"
+                       LineHeight="1.5" 
+                       FontSize="10"
+                       HorizontalTextAlignment="Center"
+                       Margin="5,0,230,0"/>
+               
+            </StackLayout>
+            
+            <StackLayout Margin="-20,0,0,0" TranslationY="20" >
+            <Image Source="ecologico.png" HeightRequest="220" HorizontalOptions="StartAndExpand"/>
+            </StackLayout>
+
+            <StackLayout  TranslationX="-20" TranslationY="-70">
+                <Label Text="HOW IT WORK" TextColor="#139F4F" FontSize="16" FontAttributes="Bold" Margin="222,0,0,20"/>
+                <Label Text=" Após o Registo, o Utilizador  é deparado diariamente com Questionários  e Possíveis soluções.No Período de uma mês  o usuária recebera um feedback com toda evolução e o impacto que  teve no planeta "
+                       LineBreakMode="WordWrap"
+                       LineHeight="1.5" 
+                       FontSize="10"
+                       HorizontalTextAlignment="Center"
+                       Margin="180,0,15,0"/>
+            </StackLayout>
+
+
+           
+
+
+
+
+
+        </StackLayout>
+        
+        
+        </Grid>
+   
+</ContentPage>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:NatureEco.Views"
+              xmlns:vm="clr-namespace:NatureEco.ViewModels"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="NatureEco.Views.Login"
+           >
+ 
+
+    <StackLayout>
+        <StackLayout>
+            <Grid>
+                <StackLayout Padding="0" Margin="0">
+                    <Frame BackgroundColor="#15C561" HeightRequest="190" HorizontalOptions="FillAndExpand" Padding="0">
+                        <Image Source="arvore.jpg" Aspect="AspectFill" Margin="0" ></Image>
+
+                    </Frame>
+                </StackLayout>
+                <StackLayout Margin="15,110,15,0">
+                    <Frame BackgroundColor="White" HasShadow="True" HeightRequest="350" HorizontalOptions="FillAndExpand" CornerRadius="8">
+                        <StackLayout >
+                            <StackLayout HorizontalOptions="CenterAndExpand">
+                                <Label Text="SIGN IN" TextColor="Black" FontSize="Medium" FontAttributes="Bold"/>
+                           
+                            </StackLayout>
+                            <StackLayout Margin="0,25,0,0">
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7">
+                                            <Image Source="account.png"  Aspect="AspectFit" Margin="0" ></Image>
+                                    </Frame>
+                                        <Entry Placeholder="Email"  x:Name="email" TextColor="#15C561" HorizontalOptions="FillAndExpand" Margin="0,0,15,0"  />
+                                    </StackLayout>
+                                    </Frame>
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0,20,0,0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7">
+                                            <Image Source="iconscadeado.png"  Aspect="AspectFit" Margin="0" ></Image>
+                                        </Frame>
+                                        <Entry Placeholder="PassWord"  IsPassword="True" x:Name="password" TextColor="#15C561" HorizontalOptions="FillAndExpand" Margin="0,0,15,0"/>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <CheckBox IsChecked="False" Color="#15C561"/>
+                                <Label Text="Remember me" HorizontalOptions="Start" VerticalTextAlignment="Center"/>
+                                <Button Text="Reset Password" Clicked="Reset" BackgroundColor="Transparent" TextColor="HotPink" HorizontalOptions="EndAndExpand" FontAttributes="Bold" />
+                                
+                            </StackLayout>
+                            <Button Text="SIGN IN" BackgroundColor="#15C561" TextColor="White" FontAttributes="Bold" CornerRadius="30" Clicked="SignIn" />
+                            <StackLayout Orientation="Horizontal">
+
+                                
+                                <Button Text="Sign Up" TextColor="HotPink" BackgroundColor="Transparent" HorizontalOptions="Center" FontAttributes="Bold"  Clicked="SignUp"  />
+                                
+
+                            </StackLayout>
+                         
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+
+            </Grid>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

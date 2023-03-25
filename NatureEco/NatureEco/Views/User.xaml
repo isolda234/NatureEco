@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NatureEco.Views.User"
+            Title="NatureEco"
+             >
+
+
+    <NavigationPage.TitleView>
+        <Button Text="Logout"  TextColor="white" Font="15" Clicked="OnLogout"   BackgroundColor="#139F4F" HorizontalOptions="EndAndExpand"/>
+
+    </NavigationPage.TitleView>
+    
+          <StackLayout BackgroundColor="White">
+        <Grid>
+            <StackLayout Padding="0" Margin="0,-40,0,0" VerticalOptions="StartAndExpand">
+                <Frame BackgroundColor="#15C561" HeightRequest="320" WidthRequest="320" HorizontalOptions="FillAndExpand" Padding="0" CornerRadius="150" Margin="0,-140,0,0"  >
+                    <Image Source="cascata.png" Aspect="AspectFill"  Margin="0" ></Image>
+
+                </Frame>
+            </StackLayout>
+            <StackLayout Margin="50,250,50,0">
+       
+                <Label TextColor="#118C46"  Text="Welcome" FontSize="Large" HorizontalTextAlignment="Center"/>
+                <Label HorizontalTextAlignment="Center">Vamos dar inicio ao quiz e aumentar a nossa pegada ecológica?</Label>
+                <Button Text="QUIZ" BackgroundColor="#15C561" TextColor="White" FontAttributes="Bold" CornerRadius="30"  Clicked="OnQuiz" Margin="0,20,0,0" />
+            </StackLayout>
+
+                    </Grid>
+        <Image  HeightRequest="150" Margin="-20,110,0,0" HorizontalOptions="Start" Source="pegada.png" />
+    </StackLayout>
+    
+</ContentPage>

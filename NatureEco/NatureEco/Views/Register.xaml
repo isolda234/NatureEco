@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:vm="clr-namespace:NatureEco.ViewModels"
+             xmlns:local="clr-namespace:NatureEco.validation" 
+             
+             NavigationPage.HasNavigationBar="False"
+             x:Class="NatureEco.Views.Register">
+    
+ 
+    <StackLayout>
+        <StackLayout>
+            <Grid>
+                <StackLayout Padding="0" Margin="0">
+                    <Frame BackgroundColor="#15C561" HeightRequest="170" HorizontalOptions="FillAndExpand" Padding="0">
+                        <Image Source="arvore.jpg" Aspect="AspectFill" Margin="0" ></Image>
+
+                    </Frame>
+                </StackLayout>
+                <StackLayout Margin="15,110,15,0">
+                    <Frame BackgroundColor="White" HasShadow="True" HeightRequest="450" HorizontalOptions="FillAndExpand" CornerRadius="8">
+                        <StackLayout >
+                            <StackLayout HorizontalOptions="CenterAndExpand">
+                                <Label Text="SIGN UP" TextColor="Black" FontSize="Medium" FontAttributes="Bold"/>
+                            </StackLayout>
+                            <StackLayout Margin="0,25,0,0">
+                                <Grid Margin="20,0,20,0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        
+
+                                    </Grid.RowDefinitions>
+                                    <StackLayout Grid.Row="0" Margin="-20,0,-20,0" >
+                                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                            <StackLayout Orientation="Horizontal">
+                                                <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7">
+                                                    <Image Source="account.png"  Aspect="AspectFit" Margin="0" ></Image>
+                                                </Frame>
+                                                <Entry Placeholder="Username"  HorizontalOptions="FillAndExpand" FontSize="16" x:Name="t_username" Margin="0,0,15,0"/>
+                                            </StackLayout>
+                                        </Frame>
+                                       
+                                    </StackLayout>
+                                    <StackLayout Grid.Row="1" Margin="-20,15,-20,0" >
+                                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                            <StackLayout Orientation="Horizontal">
+                                                <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7">
+                                                    <Image Source="email.png"  Aspect="AspectFit" Margin="0" ></Image>
+                                                </Frame>
+                                                <Entry Placeholder="exemplo@gmail.com"   FontSize="16" x:Name="t_email" Keyboard="Email" HorizontalOptions="FillAndExpand" Margin="0,0,15,0">
+                                                    <Entry.Behaviors>
+                                                        <local:EmailEntrtBehavior x:Name="validemail" IsValid="{Binding Path=IsEmailValid, Mode=TwoWay}"/>
+                                                    </Entry.Behaviors>
+                                                </Entry>
+                                                
+
+                                            </StackLayout>
+                                        </Frame>
+                                       
+                                    </StackLayout>
+                                    <StackLayout Grid.Row="2" Margin="-20,15,-20,0" >
+                                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7">
+                                                    <Image Source="dateofbirth.png"  Aspect="AspectFit" Margin="0" ></Image>
+                                            </Frame>
+                                                <DatePicker MaximumDate="3/8/2080" Format="dd/MM/yyyy" x:Name="Date"   HorizontalOptions="Center" WidthRequest="250" Margin="0,0,0,0"  />
+                                        </StackLayout>
+                                     </Frame>
+                                        
+                                    </StackLayout>
+                                    <StackLayout Grid.Row="3" Margin="-20,15,-20,0" HorizontalOptions="FillAndExpand">
+                                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0"  CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                            <StackLayout Orientation="Horizontal">
+                                                <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7">
+                                                    <Image Source="iconscadeado.png"  Aspect="AspectFit" Margin="0" ></Image>
+                                                </Frame>
+                                                <Entry  Placeholder="Password" IsPassword="True" FontSize="16" x:Name="t_password"  HorizontalOptions="FillAndExpand" Margin="0,0,15,0">
+                                                    <Entry.Behaviors>
+                                                        <local:PasswordEntryBehavior x:Name="validpasswod" IsValid="{Binding Path=IspasswordValid, Mode=TwoWay}" />
+                                                    </Entry.Behaviors>
+                                                </Entry>
+                                                
+
+                                            </StackLayout>
+                                           
+                                        </Frame>
+                                        
+
+                                    </StackLayout >
+                                    
+                                        
+                                    
+
+                                </Grid>
+                            </StackLayout>
+
+
+
+                            <Button Text="Submit" BackgroundColor="#15C561" TextColor="White" FontAttributes="Bold" CornerRadius="30" Margin="0,40,0,0"  Clicked="SignUp"/>
+
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+
+            </Grid>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

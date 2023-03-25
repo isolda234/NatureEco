@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+              xmlns:xcs="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+                NavigationPage.HasNavigationBar="False"
+             Shell.NavBarIsVisible="False"
+              x:Class="NatureEco.Views.Home"
+          
+            >
+
+    <Grid BackgroundColor="#daeee1">
+        <StackLayout WidthRequest="120" HeightRequest="70" VerticalOptions="End"  BackgroundColor="Black">
+            <Grid>
+            <Label Text="© 2022 - NatureEco" TextColor="White" Margin="10,20,0,0"/>
+                <Image Source="iconsfacebook.png" xct:CornerRadiusEffect.CornerRadius="120"   HeightRequest="30"   TranslationX="58" Margin="10,20,0,0"/>
+                <Image Source="iconsinstagram.png" HeightRequest="30"   TranslationX="58"  Margin="80,20,0,0"/>
+                <Image Source="iconsyoutube.png" HeightRequest="30"  TranslationX="68"  Margin="120,20,0,0"/>
+            </Grid>
+
+        </StackLayout>
+       
+        <StackLayout  >
+
+            <StackLayout TranslationY="15">
+            <Label Text="Nature"  VerticalTextAlignment="Center" TextColor="#15C561" FontSize="24" FontAttributes="Bold" Margin="20, 40,0,0" />
+            <Label Text="Eco" TextColor="#FBF9F9" FontSize="24" FontAttributes="Bold" Margin="93,-38,0,0" xct:ShadowEffect.Color="Gray" xct:ShadowEffect.OffsetY="5" xct:ShadowEffect.Opacity="1.5"/>
+            </StackLayout>
+        
+        
+            <StackLayout   Margin="188,-30,0,0" Orientation="Horizontal">
+
+
+                <Button BackgroundColor="Transparent" FontFamily="Segoe UI" TextColor="#15C561" FontAttributes="Bold" IsEnabled="False"   Text="Home"  Margin="-20,0,0,0"  />
+                <Button BackgroundColor="Transparent" FontFamily="Segoe UI" Text="About" TextColor="Black" Margin="-20,0,0,0" Clicked="OnAbout"/>
+                <Button BackgroundColor="Transparent" FontFamily="Segoe UI" Text="Contact"  TextColor="Black" Margin="-20,0,0,0"  Clicked="OnContact"/>
+
+            </StackLayout>
+
+
+            <Frame WidthRequest="550" HeightRequest="450" HorizontalOptions="FillAndExpand" BackgroundColor="#daeee1" BorderColor="#daeee1" Padding="0"   CornerRadius="250" TranslationX="230"    >
+                <Image Source="transferir.png"  Aspect="AspectFill" Margin="0"></Image>
+            </Frame>
+        
+            <StackLayout Margin="20,-330,0,20" HorizontalOptions="Start">
+                <Label  Text="Que Marca Queres Deixar" TextColor="Black"  FontSize="18" Opacity="0.7" HorizontalTextAlignment="Center" />
+                <Label  Text="no planeta?" TextColor="Black" FontSize="18" Opacity="0.7" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout TranslationX="5">
+                <Label   Text=" Aumente sua pegada Ecológica e começa sua jornada connosco "
+                       LineBreakMode="WordWrap"
+                       LineHeight="1.5" 
+                       FontSize="10"
+                       TextColor="Black"
+                       HorizontalTextAlignment="Center"
+                         Margin="10,0,210,0"/>
+
+            </StackLayout>
+
+            <StackLayout Margin="40,20,0,0"  HorizontalOptions="Start" >
+
+                <Button
+                     
+                        Text="Start"
+                        TextColor="White"
+                        BackgroundColor="#15C561" 
+                         WidthRequest="140"
+                        HeightRequest="40"
+                        CornerRadius="30"
+                        BorderColor="Gray"
+                        xct:ShadowEffect.Color="DarkGray"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                          Image="istockphoto1045368942170667a.png"
+                        Clicked="OnStar"
+                        >
+
+                </Button>
+
+            </StackLayout>
+        
+        
+        
+        
+            <Image Source="planta.png" HorizontalOptions="Start" WidthRequest="80" HeightRequest="80" Margin="0,90,0,0" />
+            
+
+        </StackLayout>
+     
+    </Grid>
+</ContentPage>

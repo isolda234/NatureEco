@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             Shell.NavBarIsVisible="False"
+             x:Class="NatureEco.Quiz1">
+
+
+    <ContentPage.Content>
+        <StackLayout Background="Black">
+            <StackLayout BackgroundColor="#0E8441" HeightRequest="80">
+                <Label Text="QUIZ" TextColor="White" Margin="30,20,0,0" FontSize="25" FontAttributes="Bold"/>
+                <Image Source="planta.png" WidthRequest="50" HeightRequest="50" HorizontalOptions="StartAndExpand" Margin="80,-60,0,0"/>
+                <Button Text="X" BackgroundColor="#0E8441" TextColor="White" Margin="180,-48,0,0" WidthRequest="50" HeightRequest="50" HorizontalOptions="EndAndExpand" FontSize="20" Clicked="OnReturn"/>
+            </StackLayout >
+
+           
+                <Label  TextColor="White" Margin="30" FontSize="13">
+                    <Label.FormattedText>Preencha os espaços em branco de acordo com a informação que se adequa melhor a sua situação.Por fim receberá um feedback com a sua classificação e com as melhores soluções para si de forma a expandir a sua pegada ecológica</Label.FormattedText>
+
+                </Label>
+
+                <StackLayout  Margin="50"  WidthRequest="140" HeightRequest="140" >
+                    
+                 <Entry Placeholder="Name" x:Name="Nome"  WidthRequest="20" Margin="0,20,0,0" BackgroundColor="White"  ></Entry>
+
+                <Entry Placeholder="Email"  x:Name="Email"   WidthRequest="20" Margin="0,5,0,0" BackgroundColor="White"  ></Entry>
+
+                <Entry Placeholder="Age" x:Name="Age"    WidthRequest="20" Margin="0,5,0,0" BackgroundColor="White" ></Entry>
+                                
+                     
+                </StackLayout>
+                <Button BackgroundColor="Green"
+                    Text=">"
+                    TextColor="White"
+                    FontSize="10"
+                    WidthRequest="60"
+                    HeightRequest="30"
+                    VerticalOptions="EndAndExpand"
+                     Margin="0,50,50,0"
+                   
+                    HorizontalOptions="EndAndExpand"
+                   
+                    >
+                </Button>
+                <CollectionView x:Name="collectionView" IsVisible="false">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout>
+                                <Label  HorizontalOptions="CenterAndExpand"  Text="{Binding Name}"
+                               FontSize="Medium" />
+                            <Label HorizontalOptions="CenterAndExpand" Text="{Binding Email}"
+                               TextColor="Silver"
+                               FontSize="Small" />
+                            <Label HorizontalOptions="CenterAndExpand"  Text="{Binding Age}"
+                               FontSize="Medium" />
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+
+     
+            <AbsoluteLayout TranslationY="230">
+                <Image Source="DiaMundial.png"  ></Image>
+            </AbsoluteLayout>
+            
+        </StackLayout>
+        
+       
+
+    </ContentPage.Content>
+
+</ContentPage>

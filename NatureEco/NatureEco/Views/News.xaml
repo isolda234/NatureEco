@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+           
+             Title="News"
+             x:Class="NatureEco.Views.News">
+    <ScrollView>
+        <StackLayout>
+       
+        
+              
+                    <StackLayout Padding="0" Margin="0">
+                        <Frame BackgroundColor="#15C561" HeightRequest="220" HorizontalOptions="FillAndExpand" Padding="0">
+                            <Image Source="pexelsandrecoo.jpg" Aspect="AspectFill" Margin="0" ></Image>
+
+                        </Frame>
+                    </StackLayout>
+                  
+                        <Grid Margin="20,-90,20,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            
+                            <StackLayout Grid.Row="0" Margin="0,0,0,0">
+                        <Frame BackgroundColor="White" HasShadow="True" HeightRequest="250" HorizontalOptions="FillAndExpand" CornerRadius="8">
+                            <StackLayout >
+                               
+                                    <Frame  BackgroundColor="#15C561" HeightRequest="140" Margin="-30,-30,-30,0"  WidthRequest="320" HorizontalOptions="FillAndExpand" Padding="0" CornerRadius="0">
+                                        <Image Source="alert.jpg" Aspect="AspectFill" Margin="0" ></Image>
+                                    </Frame>
+                                <StackLayout HorizontalOptions="CenterAndExpand">
+                                    <Label Text="ALERT PLANET" TextColor="Green" FontSize="Medium" FontAttributes="Bold"/>
+                                    <Label FontSize="10" Text="Desde de uns tempos ate atualidade as ações do Homem tem tido um impacto drastico no nosso planeta, devido a mau gestão de recursos naturais.Em consequencia a biodiversidade tem diminuido,aumento esscazes de recursos naturais, aumento da poluição, diminuição da camada de ozono,entre outros.Desta forma, salientamos que se não existir uma mudança pomos em risco o bem estar das gerações futuras.Com intuito de promover a sucentabilidade ambiental, temos algumas sugestões para si, pois como referido pelo Neil amstrong 'um pequeno passo para homem mas um grande passo para humanidade'."/>
+                                </StackLayout>
+                   
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                  
+
+                         <StackLayout Grid.Row="1" Margin="0,20,0,0">
+                        <Frame BackgroundColor="White" HasShadow="True" HeightRequest="250" HorizontalOptions="FillAndExpand" CornerRadius="8">
+                            <StackLayout >
+                                
+                                    <Frame  BackgroundColor="#15C561" HeightRequest="140" Margin="-30,-30,-30,0" Padding="0" WidthRequest="320" HorizontalOptions="FillAndExpand"  CornerRadius="0">
+                                        <Image Source="reciclagem.jpg" Aspect="AspectFill" Margin="0,10,0,0" ></Image>
+                                    </Frame>
+                                <StackLayout VerticalOptions="CenterAndExpand">
+                                    <Label Text="RECYCLING" TextColor="Green" FontSize="Medium" FontAttributes="Bold"/>
+                                    <Label FontSize="10" Text="Reciclagem  apesar de ser uma ação bastante divulgada, existe inúmeras pessoas no qual não são aderentes da mesma.A reciclagem é importante uma vez que permite a conservação de materias-primas e recursos naturais diminuição de poluição e redução de resisdios."/>
+
+                                </StackLayout>
+                                </StackLayout>
+                        </Frame>
+                       </StackLayout>
+                    <StackLayout Grid.Row="2"  Margin="0,20,0,0">
+
+                                <Frame BackgroundColor="White" HasShadow="True" HeightRequest="250" HorizontalOptions="FillAndExpand" CornerRadius="8">
+                                <StackLayout >
+
+                                    <Frame  BackgroundColor="#15C561" HeightRequest="140" Margin="-30,-29,-30,0" Padding="0" WidthRequest="320" HorizontalOptions="FillAndExpand"  CornerRadius="0">
+                                        <Image Source="pouparagua.png" Aspect="AspectFill" Margin="0,10,0,0" ></Image>
+                                    </Frame>
+                                    <StackLayout VerticalOptions="CenterAndExpand">
+                                <Label Text="CLOSE FAUCET" TextColor="Green" FontSize="Medium" FontAttributes="Bold"/>
+                                <Label FontSize="10" Text="Agua é um bem essencial para sobrevivencias do nosso ecossistemas, mais de 70% do planeta terra é agua.Apesar da abundância deste recursos, a proporção de água potável representa apenas 0,025% do total, que o torna escasso.Cerca de 2200 milhoes de pessoas não tem acesso.Desta foma devemos usa-lo de forma eficiente, tal como fechar a torneira enquanto lava os dentes ou mãos por exemplo."/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+
+                            </StackLayout>
+                <StackLayout Grid.Row="3"  Margin="0,20,0,0">
+
+                    <Frame BackgroundColor="White" HasShadow="True" HeightRequest="250" HorizontalOptions="FillAndExpand" CornerRadius="8">
+                        <StackLayout >
+
+                            <Frame  BackgroundColor="#15C561" HeightRequest="140" Margin="-30,-29,-30,0" Padding="0" WidthRequest="320" HorizontalOptions="FillAndExpand"  CornerRadius="0">
+                                <Image Source="poluicao.jpg" Aspect="AspectFill" Margin="0,10,0,0" ></Image>
+                            </Frame>
+                            <StackLayout VerticalOptions="CenterAndExpand">
+                                <Label Text="ATMOSPHERIC POLLUTION" TextColor="Green" FontSize="Medium" FontAttributes="Bold"/>
+                                <Label FontSize="10" Text="A poluição atmosferica é provocada pela uma mistura de sustancias quimicas, lançadas na atmosfera, resultando na sua alteração e consequentemente o aumento do buraco na camada de ozono. Este pode provocar mudanças climaticas e doenças.Podemos reduzir emissão deste mesmas sustancias de forma simples como uso de transporte publico ou becicleta."/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+
+                </StackLayout>
+
+            </Grid>
+       
+    
+        </StackLayout>
+
+    </ScrollView>
+    
+</ContentPage>

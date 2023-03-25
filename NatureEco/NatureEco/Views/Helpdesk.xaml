@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Helpdesk"
+             x:Class="NatureEco.Views.Helpdesk">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Grid>
+                    <StackLayout Padding="0" Margin="0,-73,0,0">
+                        <Frame BackgroundColor="#139F4F" HeightRequest="190"  HorizontalOptions="FillAndExpand" Padding="0" CornerRadius="80">
+                            <Image Source="arvore.jpg" Aspect="AspectFill"  Margin="0" ></Image>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="0,70,0,0">
+                       
+
+                    </StackLayout>
+                </Grid>
+
+                
+                </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label Text="Nature Helpdesk " FontSize="18" HorizontalOptions="Center" TextColor="#118C46" FontAttributes="Bold"></Label>
+                <StackLayout Margin="50">
+            <Label Text="Questões relativamente ao aplicativo ou  Problemas com o software, não se preocupe, nos ajudamos " FontSize="15" HorizontalOptions="Center" HorizontalTextAlignment="Center"></Label>
+                  
+                </StackLayout>
+                <Button Text="HELP" FlyoutItem.IsVisible="True" Image="icons8help20.png" FontSize="16" Command="{Binding ClickCommand}"   CommandParameter="https://docs.google.com/forms/d/e/1FAIpQLSd5wlSLSNO5oi2V5BcLf97Ztg-Si1QalskGYNs2l5qbFmXtJQ/viewform?usp=sf_link" BackgroundColor="#15C561"   HorizontalOptions="CenterAndExpand" WidthRequest="220" CornerRadius="80" TextColor="white" />
+              
+
+            </StackLayout>
+
+
+           
+
+            <Image Source="planta.png" HeightRequest="60" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Margin="10"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

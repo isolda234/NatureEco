@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               NavigationPage.HasNavigationBar="False"
+             x:Class="NatureEco.Views.Reset_passsword">
+    <StackLayout>
+        <StackLayout Padding="0" Margin="0">
+            <Frame BackgroundColor="#15C561" HeightRequest="190"  HorizontalOptions="FillAndExpand" Padding="0">
+                <Image Source="arvore.jpg" Aspect="AspectFill" Margin="0" ></Image>
+            </Frame>
+            
+          
+            <Label Text="Reset Password" FontSize="Large" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" Margin="0,60,0,0"/>
+            <Label Text="Enter your email to reset your password" FontSize="Medium"  HorizontalOptions="CenterAndExpand" Margin="0,10,0,0"/>
+            
+         
+                <Frame BackgroundColor="Transparent" BorderColor="LightGray" Padding="0" Margin="20,20,20,0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal">
+                        <Entry Placeholder="Email"  IsPassword="True" x:Name="password" TextColor="#15C561"  HorizontalOptions="FillAndExpand"  Margin="20,0,20,0"/>
+                    </StackLayout>
+                </Frame>
+                <Button Text="Reset Password" Margin="40,20,40,0" CornerRadius="10"/>
+           
+          
+
+
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

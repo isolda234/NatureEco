@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             NavigationPage.HasNavigationBar="False"
+             
+           
+             x:Class="NatureEco.Views.Open">
+    <ContentPage.Content  >
+        <StackLayout Background="black">
+        <StackLayout  HorizontalOptions="Center" VerticalOptions="Center" Margin="0,220,0,0">
+            <Label Text="Nature" TextColor="#15C561" FontSize="24" FontAttributes="Bold" Margin="20, 40,0,0" xct:ShadowEffect.Color="Gray" xct:ShadowEffect.OffsetY="8" xct:ShadowEffect.Opacity="0.6" />
+            <Label Text="Eco" TextColor="#FBF9F9" FontSize="24" FontAttributes="Bold" Margin="93,-38,0,0" xct:ShadowEffect.Color="Gray" xct:ShadowEffect.OffsetY="5" xct:ShadowEffect.Opacity="1.5" />
+        </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

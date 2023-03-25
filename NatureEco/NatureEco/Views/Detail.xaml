@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            Title="Master"
+
+             x:Class="NatureEco.Views.Detail">
+
+        <StackLayout Background="white">
+
+        <StackLayout>
+            <Grid>
+                <StackLayout Padding="0" Margin="0,-73,0,0">
+                    <Frame BackgroundColor="#139F4F" HeightRequest="180"  HorizontalOptions="FillAndExpand" Padding="0" CornerRadius="190">
+                        <Label Text="Isolda Lopes" FontSize="30" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" ></Label>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="0,70,0,0">
+                    <Frame BackgroundColor="White" CornerRadius="60" HeightRequest="95" WidthRequest="95" Padding="0" HorizontalOptions="CenterAndExpand"  >
+                        <Image Source="user2.png"  Aspect="AspectFit" Margin="0" ></Image>
+                    </Frame>
+
+                </StackLayout>
+            </Grid>
+            <StackLayout VerticalOptions="EndAndExpand" >
+                    <Button Text="Account" TextColor="gray" BackgroundColor="White"   FontAttributes="Bold" Font="15"  />
+                    <Button Text="Quiz" TextColor="Gray" BackgroundColor="White"  FontAttributes="Bold" Font="15"/>
+                    <Button Text="Ponctuacion" TextColor="Gray" BackgroundColor="White" FontAttributes="Bold" Font="15"/>
+                    <Button Text="Helpdesk" TextColor="Gray" BackgroundColor="White"   FontAttributes="Bold" Font="15" Clicked="OnHelp" />
+                    <Button Text="DEFINITION" TextColor="Gray" BackgroundColor="White" FontAttributes="Bold" Font="15"/>
+                </StackLayout>
+
+                <Image Source="planta.png" HeightRequest="60" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Margin="70"/>
+          
+        </StackLayout>
+     
+    </StackLayout>
+
+</ContentPage>
